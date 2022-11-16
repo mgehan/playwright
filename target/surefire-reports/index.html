@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SampleTest">
+              <span class="suite-name border-skipped">SampleTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SampleTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SampleTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SampleTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SampleTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SampleTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SampleTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SampleTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SampleTest" class="hide-methods skipped suite-SampleTest"> (hide)</a> <!-- hide-methods skipped suite-SampleTest -->
+                      <a href="#" panel-name="suite-SampleTest" class="show-methods skipped suite-SampleTest"> (show)</a> <!-- show-methods skipped suite-SampleTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-SampleTest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleTest" title="SampleTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleTest" title="SampleTest" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleTest" title="SampleTest" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleTest" title="SampleTest" hash-for-method="testRecord">testRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SampleTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SampleTest" class="panel SampleTest">
+          <div class="suite-SampleTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">SampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to create driver
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
+	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
+	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:45)
+	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:35)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:96)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:100)
+	at SampleTest.setup(SampleTest.java:23)
+Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:100)
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:69)
+	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
+	... 39 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to create driver
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
+	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
+	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:45)
+	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:35)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:96)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:100)
+	at SampleTest.setup(SampleTest.java:23)
+Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:100)
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:69)
+	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
+	... 39 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to create driver
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
+	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
+	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:45)
+	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:35)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:96)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:100)
+	at SampleTest.setup(SampleTest.java:23)
+Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:100)
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:69)
+	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
+	... 39 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRecord">
+                  </a> <!-- testRecord -->
+                  <span class="method-name">testRecord</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to create driver
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
+	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
+	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:45)
+	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:35)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:96)
+	at com.microsoft.playwright.Playwright.create(Playwright.java:100)
+	at SampleTest.setup(SampleTest.java:23)
+Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:100)
+	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:69)
+	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
+	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
+	... 39 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleTest-class-skipped -->
+        </div> <!-- panel SampleTest -->
+        <div panel-name="test-xml-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;SampleTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SampleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- SampleTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SampleTest');
+function tableData_SampleTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test3')
+data.setCell(0, 2, 'SampleTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'SampleTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test2')
+data.setCell(2, 2, 'SampleTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testRecord')
+data.setCell(3, 2, 'SampleTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['SampleTest']= { tableData: data, tableDiv: 'times-div-SampleTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-SampleTest">
+              </div> <!-- times-div-SampleTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SampleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">30447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">30452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endMethod</span>
+                <span class="method-start">30459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">30463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">30464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endMethod</span>
+                <span class="method-start">30465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">30468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">30470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endMethod</span>
+                <span class="method-start">30471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">30476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRecord</span>
+                <span class="method-start">30478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endMethod</span>
+                <span class="method-start">30479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30489 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
