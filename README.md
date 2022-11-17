@@ -1,4 +1,4 @@
-﻿# In this project the login functinality of kapruka.com is been covered using playwright
+﻿# In this project the login functinality of kapruka.com has been covered using playwright
  # Have used multiple browser context to run two different URLs from the same browser instance
  # Trace viewer is used for take screenshots and take snapshots are covered in this project
  # Video capturing coved for kapruka login funtion
